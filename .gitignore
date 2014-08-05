@@ -1,0 +1,10 @@
+# OSX
+.DS_Store
+
+# ruby
+/.bundle/
+Gemfile.lock
+vendor/bundle
+
+# gem(dotenv)
+.env
