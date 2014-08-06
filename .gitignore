@@ -3,7 +3,7 @@
 
 # ruby
 /.bundle/
-Gemfile.lock
+# Gemfile.lock # for heroku
 vendor/bundle
 
 # gem(dotenv)
