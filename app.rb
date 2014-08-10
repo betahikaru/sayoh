@@ -15,5 +15,9 @@ get '/:yo_callback_path' do
     config.access_token_secret = ENV['ACCESS_TOKEN_SECRET']
   end
   message = ENV['MESSAGES'].split(',').sample
-  client.update "#{params[:username]}#{message}"
+  begin
+    client.update "#{params[:username]}#{message}"
+  rescue Twitter::Error::Unauthorized => e
+    puts e.to_s
+  end
 end

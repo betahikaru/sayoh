@@ -17,7 +17,7 @@ describe "App" do
 
   let(:yo_callback_path) { 'yo_callback_path' }
   let(:message) { 'hoge' }
-  let(:update_message) { "#{message} #{username}さん"}
+  let(:update_message) { "#{username}#{message}"}
 
   describe 'API access' do
     context 'has YO_CALLBACK_PATH' do
