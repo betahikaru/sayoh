@@ -15,5 +15,5 @@ get '/:yo_callback_path' do
     config.access_token_secret = ENV['ACCESS_TOKEN_SECRET']
   end
   message = ENV['MESSAGES'].split(',').sample
-  client.update "#{message} #{params[:username]}さん"
+  client.update "#{params[:username]}#{message}"
 end
